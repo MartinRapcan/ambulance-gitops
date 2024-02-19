@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: rapid-ambulance-ufe-deployment # meno deployment-u od ktorého sa odvádza meno podu
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       pod:
@@ -28,8 +28,8 @@ spec:
             # je dôležité pre riadenie záťaže v rámci kubernetes
             # klastra
             requests:
-              memory: '32M'
-              cpu: '0.1'
+              memory: "32M"
+              cpu: "0.1"
             limits:
-              memory: '320M'
-              cpu: '0.3'
+              memory: "320M"
+              cpu: "0.3"
