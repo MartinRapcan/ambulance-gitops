@@ -8,11 +8,11 @@ spec:
     # module web komponentu pre tento mikroFE
     # - umiestnený v namespace wac-hospital
   navigation:
-     - element: rapid-ambulance-wl-app # element, ktorý bude vložený na stránku
-        # pri navigácii na zoznam čakajúcich
-      path: rapid-ambulance-wl # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
-      title: Zoznam čakajúcich rapid # názov mikro aplikácie
-      details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
+    - element: rapid-ambulance-wl-list # element, ktorý bude vložený na stránku
+      # pri navigácii na zoznam čakajúcich
+    path: rapid-ambulance-wl # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
+    title: Zoznam čakajúcich rapid # názov mikro aplikácie
+    details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
   preload: false # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
   proxy:
     true # pre komponenty v rámci klastra, neprístupné na verejnej sieti
